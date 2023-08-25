@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Inconsolata';
+  src: url(../fonts/Inconsolata-VariableFont_wdth.ttf);
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url(../fonts/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Space Mono Bold';
+  src: url(../fonts/SpaceMono-Bold.ttf);
+}
+
+.root {
+  font-family: 'Space Mono', sans-serif;
+  max-width: 1440px;
+  max-height: 1080px;
+  margin: 0 auto;
+  background: white;
+  color: black;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__title {
+  margin: 0;
+  padding: 40px 0 40px 77px;
+  font-size: 24px;
+  line-height: 25.18px;
+  text-transform: uppercase;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.main {
+  display: flex;
+  margin: 0 77px;
+  margin-top: 160px;
+}
+
+.main__image {
+  width: 540px;
+  height: 448px;
+  margin-right: 118px;
+}
+
+.main__content {
+}
+
+.main__title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono Bold', sans-serif;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -3px;
+}
+
+.main__text {
+  margin: 36px 0 64px;
+  padding: 0;
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+
+.main__btn {
+  color: white;
+  background: #333;
+  width: 216px;
+  height: 68px;
+  text-transform: uppercase;
+  font-family: 'Space Mono Bold', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: none;
+}
+
+.main__btn:hover {
+  background: #505050;
+  transition: background 0.2s;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 284px;
+}
+
+.footer__author {
+  margin: 24px 0;
+  padding: 0;
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.footer__link {
+  /* text-decoration: none; */
+  color: #bdbdbd;
+  font-family: 'Space Mono Bold', sans-serif;
+}
+
+.footer__link:hover {
+  color: #b5b5b5;
+}
+
+@media (max-width: 1160px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 24px;
+    margin-top: 40px;
+  }
+
+  .main__image {
+    margin: 0;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 620px) {
+  .header__title {
+    padding: 20px 24px 24px;
+  }
+
+  .main__image {
+    width: 286px;
+    height: 238px;
+  }
+
+  .main__title {
+    font-size: 48px;
+    line-height: 71px;
+  }
+
+  .main__text {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 30px 0 66px;
+  }
+
+  .footer {
+    margin-top: 114px;
+  }
+}
